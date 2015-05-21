@@ -13,6 +13,7 @@
 		119D62271B0DB94B00C660FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119D62261B0DB94B00C660FA /* Images.xcassets */; };
 		119D622A1B0DB94B00C660FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119D62281B0DB94B00C660FA /* LaunchScreen.xib */; };
 		119D62361B0DB94B00C660FA /* iBeaconSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D62351B0DB94B00C660FA /* iBeaconSwiftTests.swift */; };
+		119D62401B0DBA5F00C660FA /* iBeaconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D623F1B0DBA5F00C660FA /* iBeaconService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		119D622F1B0DB94B00C660FA /* iBeaconSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		119D62341B0DB94B00C660FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119D62351B0DB94B00C660FA /* iBeaconSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconSwiftTests.swift; sourceTree = "<group>"; };
+		119D623F1B0DBA5F00C660FA /* iBeaconService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				119D62261B0DB94B00C660FA /* Images.xcassets */,
 				119D62281B0DB94B00C660FA /* LaunchScreen.xib */,
 				119D621D1B0DB94B00C660FA /* Supporting Files */,
+				119D623F1B0DBA5F00C660FA /* iBeaconService.swift */,
 			);
 			path = iBeaconSwift;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119D62401B0DBA5F00C660FA /* iBeaconService.swift in Sources */,
 				119D62221B0DB94B00C660FA /* ViewController.swift in Sources */,
 				119D62201B0DB94B00C660FA /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				119D623B1B0DB94B00C660FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		119D623C1B0DB94B00C660FA /* Build configuration list for PBXNativeTarget "iBeaconSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				119D623E1B0DB94B00C660FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
