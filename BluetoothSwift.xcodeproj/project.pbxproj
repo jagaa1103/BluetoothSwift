@@ -170,6 +170,11 @@
 				TargetAttributes = {
 					1193A0701B0F0FD30050A2DE = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1193A0851B0F0FD40050A2DE = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -421,6 +426,7 @@
 				1193A0921B0F0FD40050A2DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1193A0931B0F0FD40050A2DE /* Build configuration list for PBXNativeTarget "BluetoothSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +435,7 @@
 				1193A0951B0F0FD40050A2DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
