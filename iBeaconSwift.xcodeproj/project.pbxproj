@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11635D9F1B0EC8670087A23E /* CentralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635D9E1B0EC8670087A23E /* CentralService.swift */; };
 		119D62201B0DB94B00C660FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D621F1B0DB94B00C660FA /* AppDelegate.swift */; };
 		119D62221B0DB94B00C660FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D62211B0DB94B00C660FA /* ViewController.swift */; };
 		119D62251B0DB94B00C660FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119D62231B0DB94B00C660FA /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11635D9E1B0EC8670087A23E /* CentralService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralService.swift; sourceTree = "<group>"; };
 		119D621A1B0DB94B00C660FA /* iBeaconSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119D621E1B0DB94B00C660FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119D621F1B0DB94B00C660FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				119D62281B0DB94B00C660FA /* LaunchScreen.xib */,
 				119D621D1B0DB94B00C660FA /* Supporting Files */,
 				119D623F1B0DBA5F00C660FA /* iBeaconService.swift */,
+				11635D9E1B0EC8670087A23E /* CentralService.swift */,
 			);
 			path = iBeaconSwift;
 			sourceTree = "<group>";
@@ -164,6 +167,11 @@
 				TargetAttributes = {
 					119D62191B0DB94B00C660FA = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					119D622E1B0DB94B00C660FA = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -216,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119D62401B0DBA5F00C660FA /* iBeaconService.swift in Sources */,
+				11635D9F1B0EC8670087A23E /* CentralService.swift in Sources */,
 				119D62221B0DB94B00C660FA /* ViewController.swift in Sources */,
 				119D62201B0DB94B00C660FA /* AppDelegate.swift in Sources */,
 			);

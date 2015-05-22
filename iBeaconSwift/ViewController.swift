@@ -12,12 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        iBeaconService.sharedInstance.startService()
+//        iBeaconService.sharedInstance.startService()
+        CentralService.sharedInstance.startService()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewDidAppear(animated: Bool) {
+        CentralService.sharedInstance.scanPeripheral()
     }
 }
 
