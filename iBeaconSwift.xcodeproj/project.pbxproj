@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11635D9F1B0EC8670087A23E /* CentralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11635D9E1B0EC8670087A23E /* CentralService.swift */; };
+		119131FB1B0ED76400AFCFFE /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 119131FA1B0ED76400AFCFFE /* Sounds */; };
+		119131FD1B0ED78900AFCFFE /* VoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119131FC1B0ED78900AFCFFE /* VoiceService.swift */; };
 		119D62201B0DB94B00C660FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D621F1B0DB94B00C660FA /* AppDelegate.swift */; };
 		119D62221B0DB94B00C660FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D62211B0DB94B00C660FA /* ViewController.swift */; };
 		119D62251B0DB94B00C660FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119D62231B0DB94B00C660FA /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		11635D9E1B0EC8670087A23E /* CentralService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralService.swift; sourceTree = "<group>"; };
+		119131FA1B0ED76400AFCFFE /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		119131FC1B0ED78900AFCFFE /* VoiceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceService.swift; sourceTree = "<group>"; };
 		119D621A1B0DB94B00C660FA /* iBeaconSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119D621E1B0DB94B00C660FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119D621F1B0DB94B00C660FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		119D621C1B0DB94B00C660FA /* iBeaconSwift */ = {
 			isa = PBXGroup;
 			children = (
+				119131FC1B0ED78900AFCFFE /* VoiceService.swift */,
 				119D621F1B0DB94B00C660FA /* AppDelegate.swift */,
 				119D62211B0DB94B00C660FA /* ViewController.swift */,
 				119D62231B0DB94B00C660FA /* Main.storyboard */,
@@ -89,6 +94,7 @@
 				119D621D1B0DB94B00C660FA /* Supporting Files */,
 				119D623F1B0DBA5F00C660FA /* iBeaconService.swift */,
 				11635D9E1B0EC8670087A23E /* CentralService.swift */,
+				119131FA1B0ED76400AFCFFE /* Sounds */,
 			);
 			path = iBeaconSwift;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			files = (
 				119D62251B0DB94B00C660FA /* Main.storyboard in Resources */,
 				119D622A1B0DB94B00C660FA /* LaunchScreen.xib in Resources */,
+				119131FB1B0ED76400AFCFFE /* Sounds in Resources */,
 				119D62271B0DB94B00C660FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119D62401B0DBA5F00C660FA /* iBeaconService.swift in Sources */,
+				119131FD1B0ED78900AFCFFE /* VoiceService.swift in Sources */,
 				11635D9F1B0EC8670087A23E /* CentralService.swift in Sources */,
 				119D62221B0DB94B00C660FA /* ViewController.swift in Sources */,
 				119D62201B0DB94B00C660FA /* AppDelegate.swift in Sources */,

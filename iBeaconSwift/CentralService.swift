@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreBluetooth
+import UIKit
 
 class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
@@ -22,6 +23,7 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     var myPeripheral: CBPeripheral!
     var bluetoothOn:Bool = false
     
+    var mainView:ViewController?
     
     class var sharedInstance: CentralService {
         struct Static {
@@ -37,7 +39,9 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         isMode = true
         self.myPeripheral = nil
     }
-    
+    func setView(view:ViewController){
+        mainView = view
+    }
     func startService(){
         isMode = false
         centmanager = CBCentralManager(delegate: self, queue: nil)
@@ -147,13 +151,39 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             println("[kys]byte=\(values)")
             
             if (values[0] == 0x3) {
-                println("Clicked");
+                println("Clicked")
+                var  hole:String = mainView!.holeTextField.text
+                var  distance:String = mainView!.distanceTextField.text
+                var unit:String = ""
+                if(mainView!.unitSegment.selectedSegmentIndex == 0){
+                    unit = "YARD"
+                }else{
+                    unit = "METER"
+                }
+                
+                if(!hole.isEmpty && !distance.isEmpty && !unit.isEmpty){
+                        VoiceService.sharedInstance.distanceSound(hole, distance: distance, unit: unit)
+                }else{
+                    println("Insert correct info!!!")
+                    
+                    var alert = UIAlertView(title: "Alert", message: "Please insert correct info!!!", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
+                }
+                
             } else if (values[0] == 0x4) {
                 println("Double Clicked");
+                if(mainView?.unitSegment.selectedSegmentIndex == 0){
+                    mainView?.unitSegment.selectedSegmentIndex = 1
+                }else{
+                    mainView?.unitSegment.selectedSegmentIndex = 0
+                }
             } else if (values[0] == 0x5) {
                 println("Triple Clicked");
+                var tmp_hole:NSNumber = mainView!.holeTextField.text.toInt()! + 1
+                mainView?.holeTextField.text = tmp_hole.stringValue
             } else if (values[0] == 0x6) {
                 println("Long Pressed");
+                mainView?.endGame()
             }
         }
     }
