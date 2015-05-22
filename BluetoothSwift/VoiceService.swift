@@ -1,8 +1,8 @@
 //
 //  VoiceService.swift
-//  VoiceShuu
+//  BluetoothSwift
 //
-//  Created by Enkhjargal Gansukh on 4/27/15.
+//  Created by Enkhjargal Gansukh on 5/22/15.
 //  Copyright (c) 2015 Enkhjargal Gansukh. All rights reserved.
 //
 
@@ -107,10 +107,10 @@ class VoiceService {
     }
     
     func playSound(data:String){
-            let soundURL = NSBundle.mainBundle().URLForResource("Sounds/\(data)", withExtension: "caf")
-            var mySound: SystemSoundID = 0
-            AudioServicesCreateSystemSoundID(soundURL, &mySound)
-            AudioServicesPlaySystemSound(mySound);
+        let soundURL = NSBundle.mainBundle().URLForResource("Sounds/\(data)", withExtension: "caf")
+        var mySound: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundURL, &mySound)
+        AudioServicesPlaySystemSound(mySound);
     }
     
     func setDeviceLanguage(){

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "119D62191B0DB94B00C660FA"
-               BuildableName = "iBeaconSwift.app"
-               BlueprintName = "iBeaconSwift"
-               ReferencedContainer = "container:iBeaconSwift.xcodeproj">
+               BlueprintIdentifier = "1193A0701B0F0FD30050A2DE"
+               BuildableName = "BluetoothSwift.app"
+               BlueprintName = "BluetoothSwift"
+               ReferencedContainer = "container:BluetoothSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "119D622E1B0DB94B00C660FA"
-               BuildableName = "iBeaconSwiftTests.xctest"
-               BlueprintName = "iBeaconSwiftTests"
-               ReferencedContainer = "container:iBeaconSwift.xcodeproj">
+               BlueprintIdentifier = "1193A0851B0F0FD40050A2DE"
+               BuildableName = "BluetoothSwiftTests.xctest"
+               BlueprintName = "BluetoothSwiftTests"
+               ReferencedContainer = "container:BluetoothSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "119D622E1B0DB94B00C660FA"
-               BuildableName = "iBeaconSwiftTests.xctest"
-               BlueprintName = "iBeaconSwiftTests"
-               ReferencedContainer = "container:iBeaconSwift.xcodeproj">
+               BlueprintIdentifier = "1193A0851B0F0FD40050A2DE"
+               BuildableName = "BluetoothSwiftTests.xctest"
+               BlueprintName = "BluetoothSwiftTests"
+               ReferencedContainer = "container:BluetoothSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "119D62191B0DB94B00C660FA"
-            BuildableName = "iBeaconSwift.app"
-            BlueprintName = "iBeaconSwift"
-            ReferencedContainer = "container:iBeaconSwift.xcodeproj">
+            BlueprintIdentifier = "1193A0701B0F0FD30050A2DE"
+            BuildableName = "BluetoothSwift.app"
+            BlueprintName = "BluetoothSwift"
+            ReferencedContainer = "container:BluetoothSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "119D62191B0DB94B00C660FA"
-            BuildableName = "iBeaconSwift.app"
-            BlueprintName = "iBeaconSwift"
-            ReferencedContainer = "container:iBeaconSwift.xcodeproj">
+            BlueprintIdentifier = "1193A0701B0F0FD30050A2DE"
+            BuildableName = "BluetoothSwift.app"
+            BlueprintName = "BluetoothSwift"
+            ReferencedContainer = "container:BluetoothSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "119D62191B0DB94B00C660FA"
-            BuildableName = "iBeaconSwift.app"
-            BlueprintName = "iBeaconSwift"
-            ReferencedContainer = "container:iBeaconSwift.xcodeproj">
+            BlueprintIdentifier = "1193A0701B0F0FD30050A2DE"
+            BuildableName = "BluetoothSwift.app"
+            BlueprintName = "BluetoothSwift"
+            ReferencedContainer = "container:BluetoothSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

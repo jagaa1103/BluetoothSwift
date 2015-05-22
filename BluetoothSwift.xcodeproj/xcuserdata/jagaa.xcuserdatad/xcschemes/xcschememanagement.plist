@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iBeaconSwift.xcscheme</key>
+		<key>BluetoothSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>119D62191B0DB94B00C660FA</key>
+		<key>1193A0701B0F0FD30050A2DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>119D622E1B0DB94B00C660FA</key>
+		<key>1193A0851B0F0FD40050A2DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

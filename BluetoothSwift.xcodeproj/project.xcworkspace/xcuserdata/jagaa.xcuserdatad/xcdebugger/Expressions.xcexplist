@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "BluetoothSwift.CentralService.peripheral (BluetoothSwift.CentralService)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.CBPeripheral&gt;, didUpdateValueForCharacteristic : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.CBCharacteristic&gt;, error : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; ():CentralService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

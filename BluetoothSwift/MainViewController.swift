@@ -1,38 +1,36 @@
 //
 //  ViewController.swift
-//  iBeaconSwift
+//  BluetoothSwift
 //
-//  Created by Enkhjargal Gansukh on 5/21/15.
+//  Created by Enkhjargal Gansukh on 5/22/15.
 //  Copyright (c) 2015 Enkhjargal Gansukh. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
-    @IBOutlet weak var unitSegment: UISegmentedControl!
     @IBOutlet weak var distanceTextField: UITextField!
+    @IBOutlet weak var unitSegment: UISegmentedControl!
     @IBOutlet weak var holeTextField: UITextField!
     
-    var distance:String?
-    var hole:String?
     override func viewDidLoad() {
         super.viewDidLoad()
-        VoiceService.sharedInstance.setDeviceLanguage()
-//        iBeaconService.sharedInstance.startService()
-        CentralService.sharedInstance.startService()
         
+        VoiceService.sharedInstance.setDeviceLanguage()
+        CentralService.sharedInstance.startService()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     override func viewDidAppear(animated: Bool) {
         CentralService.sharedInstance.setView(self)
         CentralService.sharedInstance.scanPeripheral()
     }
-    
+
     func endGame(){
         
         // Create the alert controller
@@ -57,5 +55,7 @@ class ViewController: UIViewController {
         // Present the controller
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+
+
 }
 

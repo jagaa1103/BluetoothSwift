@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  iBeaconSwift
+//  BluetoothSwift
 //
-//  Created by Enkhjargal Gansukh on 5/21/15.
+//  Created by Enkhjargal Gansukh on 5/22/15.
 //  Copyright (c) 2015 Enkhjargal Gansukh. All rights reserved.
 //
 

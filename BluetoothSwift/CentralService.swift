@@ -1,6 +1,7 @@
+
 //
-//  centralService.swift
-//  iBeaconSwift
+//  CentralService.swift
+//  BluetoothSwift
 //
 //  Created by Enkhjargal Gansukh on 5/22/15.
 //  Copyright (c) 2015 Enkhjargal Gansukh. All rights reserved.
@@ -23,7 +24,7 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     var myPeripheral: CBPeripheral!
     var bluetoothOn:Bool = false
     
-    var mainView:ViewController?
+    var mainView:MainViewController?
     
     class var sharedInstance: CentralService {
         struct Static {
@@ -39,7 +40,7 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         isMode = true
         self.myPeripheral = nil
     }
-    func setView(view:ViewController){
+    func setView(view:MainViewController){
         mainView = view
     }
     func startService(){
@@ -74,7 +75,7 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         }else{
             println("Coda is not connected!!! Please connect Coda")
         }
-
+        
     }
     
     func centralManager(central: CBCentralManager!, didFailToConnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
@@ -152,8 +153,8 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             
             if (values[0] == 0x3) {
                 println("Clicked")
-                var  hole:String = mainView!.holeTextField.text
-                var  distance:String = mainView!.distanceTextField.text
+                var hole:String = mainView!.holeTextField.text
+                var distance:String = mainView!.distanceTextField.text
                 var unit:String = ""
                 if(mainView!.unitSegment.selectedSegmentIndex == 0){
                     unit = "YARD"
@@ -162,7 +163,7 @@ class CentralService: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
                 }
                 
                 if(!hole.isEmpty && !distance.isEmpty && !unit.isEmpty){
-                        VoiceService.sharedInstance.distanceSound(hole, distance: distance, unit: unit)
+                    VoiceService.sharedInstance.distanceSound(hole, distance: distance, unit: unit)
                 }else{
                     println("Insert correct info!!!")
                     
